@@ -30,7 +30,7 @@ cd MedMeshCNN
 # Run Blender scripts 
 
 To run the blender scripts, copy and paste the provided script into the Blender Python Console.
-Make sure that you update all path according to your own locations. 
+Make sure that you update all paths according to your own locations. 
 
 ### Prepare Blender for manual segmentation
 To prepare Blender for the manual segmentation of an object, insert the prepare_blender.py after opening Blender. 
@@ -40,14 +40,14 @@ This script creates 4 vertex groups and maps 4 different colors to the group. If
 For the manual segmentation please refer to my medium article here. 
 
 ### Extract labels from the manual segmentation (.eseg file)
-In order to extract the edge labels from the manual segmentation run insert the content of extract_edge_labels.py into the Blender Python Console. 
+In order to extract the edge labels from the manual segmentation insert the content of extract_edge_labels.py into the Blender Python Console after performing the manual segmentation. 
 This script creates an .eseg file of the object, which includes the class labels per edge ordered after their edge ID. 
 Afterwards, it is still necessary to create a .seseg file for your object to run MedMeshCNN or MeshCNN. For this you can refer to the Python section of this toolbox. 
 
 
 ### Print segmentation of .eseg file to your object
 The print_segmentation.py script lets you print your .eseg files onto the surface of your mesh. 
-Make sure that you always keep the vertex order when importing an object. 
+Make sure that you always activate "keep vertex order" when importing an object.  
 
 
 
