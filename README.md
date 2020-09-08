@@ -37,7 +37,7 @@ To prepare Blender for the manual segmentation of an object, insert the prepare_
 This script creates 4 vertex groups and maps 4 different colors to the group. If you want to create a segmentation with more classes, alter the script accordingly. 
 
 ### Perform a manual segmentation
-For the manual segmentation please refer to my medium article here. 
+For the manual segmentation please refer to my Medium article [here](https://medium.com/@lisa_81193/how-to-perform-a-3d-segmentation-in-blender-2-82-d87300305f3f). 
 
 ### Extract labels from the manual segmentation (.eseg file)
 In order to extract the edge labels from the manual segmentation insert the content of extract_edge_labels.py into the Blender Python Console after performing the manual segmentation. 
